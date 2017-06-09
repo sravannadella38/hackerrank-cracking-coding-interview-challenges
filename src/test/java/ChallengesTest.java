@@ -1,5 +1,7 @@
 import org.junit.Test;
 
+import java.util.Arrays;
+
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
@@ -11,5 +13,12 @@ public class ChallengesTest {
     public void testArraysLeftRotation() {
         int[] a = {1, 2, 3, 4, 5};
         assertThat(ArraysLeftRotation.leftRotate(a, 4), is("5 1 2 3 4 "));
+    }
+
+    @Test
+    public void testMakingAnagrams() {
+         String  a = "abc";
+         String  b = "cde";
+         assertThat(MakingAnagrams.numberNeeded(a,b), is(4));
     }
 }
